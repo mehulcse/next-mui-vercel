@@ -21,37 +21,35 @@ export default function Home() {
 			<Head>
 				<meta name="description" content={`User Details ${user?.name}`}/>
 			</Head>
-			<main className={`${styles.main} ${inter.className}`}>
-				<Box sx={{height: 400, width: '100%'}}>
-					<Typography color="primary" variant="h3" gutterBottom>
-						User Details
-					</Typography>
-					<Card sx={{p: 4, display: 'grid', gridTemplateColumns: "300px 1fr"}}>
-						<Box>
-							<Image
-								src={user?.image}
-								width={200}
-								height={200}
-								alt="Picture of the author"
-							/>
-						</Box>
-						<Box>
-							<Typography variant="h5" gutterBottom>
-								Name: {user?.name}
-							</Typography>
-							<Typography variant="h5" gutterBottom>
-								Age: {user?.age}
-							</Typography>
-							<Typography variant="h5" gutterBottom>
-								Email: {user?.email}
-							</Typography>
-							<Typography variant="h5" gutterBottom>
-								City: {user?.city}
-							</Typography>
-						</Box>
-					</Card>
-				</Box>
-			</main>
+			<Box sx={{height: 400, width: '100%', p: 6}}>
+				<Typography color="primary" variant="h3" gutterBottom>
+					User Details
+				</Typography>
+				<Card sx={{p: 4, display: 'grid', gridTemplateColumns: "300px 1fr"}}>
+					<Box>
+						<Image
+							src={user?.image}
+							width={200}
+							height={200}
+							alt="Picture of the author"
+						/>
+					</Box>
+					<Box>
+						<Typography variant="h5" gutterBottom>
+							Name: {user?.name}
+						</Typography>
+						<Typography variant="h5" gutterBottom>
+							Age: {user?.age}
+						</Typography>
+						<Typography variant="h5" gutterBottom>
+							Email: {user?.email}
+						</Typography>
+						<Typography variant="h5" gutterBottom>
+							City: {user?.city}
+						</Typography>
+					</Box>
+				</Card>
+			</Box>
 		</>
 	)
 }
