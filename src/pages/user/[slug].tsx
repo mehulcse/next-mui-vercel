@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import {Inter} from 'next/font/google';
 import Box from '@mui/material/Box';
 import styles from '@/styles/Home.module.css'
 import {useQuery} from "react-query";
@@ -8,9 +7,6 @@ import Image from 'next/image'
 import {useRouter} from 'next/router'
 import {useMemo} from "react";
 import {Card, Typography} from "@mui/material";
-
-const inter = Inter({subsets: ['latin']})
-
 
 export default function Home() {
 	const router = useRouter()
