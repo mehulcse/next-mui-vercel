@@ -107,6 +107,20 @@
 .logo {
   position: relative;
 }
+
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: cornflowerblue;
+    text-decoration: none;
+    transition: color 200ms;
+}
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
